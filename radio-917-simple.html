@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio 91.7 FM</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #1a1a1a;
+            color: white;
+        }
+        
+        .slide {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .purple-bg {
+            background: linear-gradient(135deg, #6b46c1, #9333ea);
+        }
+        
+        .logo {
+            font-size: 150px;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .fm {
+            font-size: 60px;
+            color: #fde047;
+            position: absolute;
+            top: 30px;
+            right: -100px;
+        }
+        
+        .yellow {
+            color: #fde047;
+        }
+        
+        h1 {
+            font-size: 60px;
+            margin: 30px 0;
+        }
+        
+        h2 {
+            font-size: 48px;
+            color: #fde047;
+            margin: 20px 0;
+        }
+        
+        .cta {
+            background: #9333ea;
+            padding: 60px;
+            margin: 40px 0;
+        }
+        
+        .digital-item {
+            background: rgba(168, 85, 247, 0.3);
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 600px;
+            font-size: 32px;
+            border-radius: 15px;
+        }
+        
+        .segment {
+            display: inline-block;
+            background: #6b46c1;
+            padding: 30px;
+            margin: 10px;
+            border-radius: 15px;
+        }
+        
+        /* Elementos decorativos */
+        .music-element {
+            position: absolute;
+            opacity: 0.1;
+            font-size: 80px;
+        }
+        
+        .music-element-1 {
+            top: 10%;
+            left: 5%;
+            transform: rotate(-15deg);
+        }
+        
+        .music-element-2 {
+            bottom: 10%;
+            right: 5%;
+            transform: rotate(15deg);
+        }
+        
+        .music-element-3 {
+            top: 50%;
+            left: 2%;
+            transform: rotate(-30deg);
+        }
+        
+        .music-element-4 {
+            bottom: 20%;
+            left: 10%;
+            transform: rotate(25deg);
+        }
+        
+        .music-element-5 {
+            top: 15%;
+            right: 10%;
+            transform: rotate(-20deg);
+        }
+        
+        .vinyl {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: #333;
+            border-radius: 50%;
+            opacity: 0.1;
+        }
+        
+        .vinyl::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50px;
+            height: 50px;
+            background: #666;
+            border-radius: 50%;
+        }
+        
+        .vinyl-1 {
+            top: 20%;
+            right: 15%;
+            animation: spin 10s linear infinite;
+        }
+        
+        .vinyl-2 {
+            bottom: 15%;
+            left: 15%;
+            animation: spin 15s linear infinite reverse;
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- PORTADA -->
+    <div class="slide purple-bg">
+        <span class="music-element music-element-1">🎵</span>
+        <span class="music-element music-element-2">🎧</span>
+        <div class="vinyl vinyl-1"></div>
+        <div>
+            <div class="logo">
+                91.7
+                <span class="fm">FM</span>
+            </div>
+            <p style="font-size: 36px; color: #fde047;">≡TuPlaylist</p>
+            <h1 class="yellow">SOMOS MÁS QUE UNA RADIO</h1>
+        </div>
+    </div>
+
+    <!-- 30 MIL OYENTES -->
+    <div class="slide">
+        <span class="music-element music-element-3">🎤</span>
+        <span class="music-element music-element-4">📻</span>
+        <div>
+            <h1 style="font-size: 200px; color: #fde047;">30 mil</h1>
+            <p style="font-size: 40px;">× A/B, C, D | 8 A 44 AÑOS</p>
+            <p>RATING - INRA 2024</p>
+        </div>
+    </div>
+
+    <!-- CTA PRINCIPAL -->
+    <div class="slide cta">
+        <span class="music-element music-element-1">🎶</span>
+        <span class="music-element music-element-5">📱</span>
+        <div>
+            <h2>¡El momento es ahora!</h2>
+            <h1 style="color: white;">¿Puedes permitirte que tus clientes<br>NO te escuchen mientras manejan sus autos?</h1>
+        </div>
+    </div>
+
+    <!-- SEGMENTOS DETALLADOS -->
+    <div class="slide">
+        <div class="vinyl vinyl-2"></div>
+        <span class="music-element music-element-2">🎸</span>
+        <div>
+            <h2>Frecuencia Líder en Segmentos A/B/C/D</h2>
+            <div>
+                <div class="segment">
+                    <h3 class="yellow">A</h3>
+                    <p>18-25 años<br>Jóvenes profesionales</p>
+                </div>
+                <div class="segment">
+                    <h3 class="yellow">B</h3>
+                    <p>26-35 años<br>Adultos jóvenes</p>
+                </div>
+                <div class="segment">
+                    <h3 class="yellow">C</h3>
+                    <p>36-45 años<br>Adultos consolidados</p>
+                </div>
+                <div class="segment">
+                    <h3 class="yellow">D</h3>
+                    <p>46-55 años<br>Adultos maduros</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LO QUE MEDIOS DIGITALES NO PUEDEN OFRECER -->
+    <div class="slide">
+        <span class="music-element music-element-1">🎧</span>
+        <span class="music-element music-element-4">🎙️</span>
+        <div>
+            <h2>Lo que Medios Digitales NO Pueden Ofrecer</h2>
+            <div class="digital-item">💯 Medio 100% Humanamente Interactivo</div>
+            <div class="digital-item">🎙️ Locutores Reales</div>
+            <div class="digital-item">🎧 Voces de Personas que Tú Conoces</div>
+        </div>
+    </div>
+
+    <!-- COBERTURA -->
+    <div class="slide purple-bg">
+        <span class="music-element music-element-3">📡</span>
+        <div class="vinyl vinyl-1"></div>
+        <div>
+            <h1 class="yellow">LLEGA AL 50% DEL TERRITORIO ESTATAL</h1>
+            <div class="logo">
+                91.7
+                <span class="fm">FM</span>
+            </div>
+            <p>XHCIA-FM Colima, COL</p>
+        </div>
+    </div>
+
+    <!-- VEHÍCULOS -->
+    <div class="slide">
+        <span class="music-element music-element-2">🚗</span>
+        <span class="music-element music-element-5">🎵</span>
+        <div>
+            <h1 class="yellow">170 MIL VEHÍCULOS EN TRAYECTO</h1>
+        </div>
+    </div>
+
+    <!-- LOCUTORES -->
+    <div class="slide" style="background: #f5f5f5; color: #333;">
+        <span class="music-element music-element-1" style="color: #9333ea;">🎤</span>
+        <span class="music-element music-element-4" style="color: #9333ea;">🎧</span>
+        <div>
+            <h1 style="color: #9333ea;">VOCES JÓVENES</h1>
+            <h2 style="color: #9333ea;">LOCUCIÓN PROFESIONAL</h2>
+            <p>DIANA GUERRERO • PABLO RODRÍGUEZ</p>
+            <p>PAU ORNELAS • ANDIE LANGARICA</p>
+        </div>
+    </div>
+
+    <!-- REDES SOCIALES -->
+    <div class="slide purple-bg">
+        <span class="music-element music-element-3">📱</span>
+        <span class="music-element music-element-5">💬</span>
+        <div>
+            <h2>Redes Sociales</h2>
+            <p style="font-size: 24px;">📘 40MIL SEGUIDORES - Facebook</p>
+            <p style="font-size: 24px;">💬 4500 PERSONAS - Estados de WhatsApp</p>
+            <p style="font-size: 24px;">📷 2500 SEGUIDORES - Instagram</p>
+            <p style="font-size: 24px;">🎵 CRECIMIENTO - TikTok</p>
+        </div>
+    </div>
+
+    <!-- NUEVA LÁMINA - MÚSICA -->
+    <div class="slide">
+        <span class="music-element music-element-1">🎸</span>
+        <span class="music-element music-element-2">🎹</span>
+        <div class="vinyl vinyl-2"></div>
+        <div>
+            <h1 class="yellow" style="font-size: 48px; line-height: 1.4;">Lo mejor de la nueva música, así como una selección contemporánea que sigue en tendencia, en inglés y en español</h1>
+        </div>
+    </div>
+
+    <!-- MEDIO VIGENTE -->
+    <div class="slide">
+        <span class="music-element music-element-4">📻</span>
+        <span class="music-element music-element-5">🎶</span>
+        <div>
+            <h1 class="yellow">MEDIO VIGENTE Y PODEROSO</h1>
+            <p style="font-size: 28px;">LLEGA A MÁS DE 30 MIL PERSONAS DIARIAS AL MISMO TIEMPO</p>
+            <p style="font-size: 28px;">TU MARCA EN LA FRECUENCIA LÍDER</p>
+            <p style="font-size: 28px;">MEDIO HÍBRIDO CON ALCANCE EN RADIO Y PLATAFORMAS DIGITALES</p>
+            <p style="font-size: 28px;">+ 30 AÑOS EN TUS OÍDOS</p>
+        </div>
+    </div>
+
+    <!-- NUEVA LÁMINA - AUDITORIO CREA LA PROGRAMACIÓN -->
+    <div class="slide purple-bg">
+        <span class="music-element music-element-1">🎵</span>
+        <span class="music-element music-element-3">📱</span>
+        <div class="vinyl vinyl-1"></div>
+        <div>
+            <h1 class="yellow" style="font-size: 48px; line-height: 1.3;">Somos la única estación donde el auditorio crea la programación musical</h1>
+            <p style="font-size: 36px; margin-top: 40px;">De ahí que nuestro eslogan es:</p>
+            <h2 style="font-size: 72px; margin-top: 30px;">#TuPlaylist</h2>
+        </div>
+    </div>
+
+    <!-- FINAL -->
+    <div class="slide purple-bg">
+        <span class="music-element music-element-2">🎤</span>
+        <span class="music-element music-element-4">🎧</span>
+        <div class="vinyl vinyl-2"></div>
+        <div>
+            <h1 class="yellow">LA RADIO ES LA RADIO</h1>
+            <div class="logo">
+                91.7
+                <span class="fm">FM</span>
+            </div>
+            <p style="margin-top: 40px; font-size: 24px;">Mario Ramírez Ramírez</p>
+            <p style="font-size: 22px;">Ventas: 312 1078 917</p>
+            <p style="font-size: 20px;">ventasmario91.7@gmail.com</p>
+            <p style="margin-top: 20px;">Contáctanos: @917colima</p>
+            <p style="font-size: 32px; color: #fde047;">Escúchanos 🚗 917colima.mx</p>
+        </div>
+    </div>
+</body>
+</html>
